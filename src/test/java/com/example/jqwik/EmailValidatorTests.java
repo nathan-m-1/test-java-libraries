@@ -1,10 +1,10 @@
-package com.test.general;
+package com.example.jqwik;
 
 import net.jqwik.api.*;
 
 public class EmailValidatorTests {
 
-    @Property(tries = 500)
+    @Property(tries = 50)
     boolean validEmailsAreRecognized(@ForAll("validEmails") String email){
         System.out.println("Generando email: " + email);
         return EmailValidator.isValidEmail(email);

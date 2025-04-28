@@ -1,4 +1,4 @@
-package com.test.general;
+package com.example.jqwik;
 
 public class EmailValidator {
 
